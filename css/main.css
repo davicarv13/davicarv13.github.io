@@ -51,7 +51,7 @@ h1, p, h2{
 }
 
 .index_header{
-	background-image: url(../images/index_header_background2.jpg);
+	background-image: url(../images/index_header_background1.jpg);
 	background-size: cover;
 	width: 100vw;
 	height: 350px;
@@ -61,6 +61,13 @@ h1, p, h2{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	animation-name: headerBackgroundChange;
+	animation-duration: 8s;
+	animation-timing-function: linear;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
 }
 
 .index_header div{
@@ -153,6 +160,18 @@ footer p{
 		top: 34.5%;
 		transform: scale(1, 1);
 	}	
+}
+
+@keyframes headerBackgroundChange{
+	0%{
+		background-image: url(../images/index_header_background1.jpg);
+	}
+	50%{
+		background-image: url(../images/index_header_background2.jpg);	
+	}
+	100%{
+		background-image: url(../images/index_header_background3.jpg);
+	}
 }
 
 @media screen and (max-width: 500px){

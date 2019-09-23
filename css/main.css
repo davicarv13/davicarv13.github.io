@@ -18,7 +18,7 @@ h1, p, h2{
 }
 
 .referencia{
-	background: #403735;
+	background: #403735; 
 }
 
 .referencia ul{
@@ -51,7 +51,7 @@ h1, p, h2{
 }
 
 .index_header{
-	background-image: url(index_header_background2.jpg);
+	background-image: url(../images/index_header_background2.jpg);
 	background-size: cover;
 	width: 100vw;
 	height: 350px;

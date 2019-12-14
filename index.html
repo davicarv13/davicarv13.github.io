@@ -5,8 +5,8 @@
 	<title>Prova Hipermidias</title>
 	<script src="https://kit.fontawesome.com/1ff1755439.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
-  	<link rel="stylesheet" type="text/css" href="/Prova_Hipermidias.css">
-  	<link rel="stylesheet" type="text/css" href="/Prova_Hipermidias_Carousel.css">
+  	<link rel="stylesheet" type="text/css" href="Prova_Hipermidias.css">
+  	<link rel="stylesheet" type="text/css" href="Prova_Hipermidias_Carousel.css">
    	
 </head>
 <body>
@@ -38,8 +38,7 @@
 			</ul>
 		</nav>
 	</header>
-
-	<div class = "main_content">
+	<div class="main_content">
 		<aside class = "content_left">
 			<img src="https://www.globalframe.com.br/gf_base/empresas/MIGA/imagens/798983088651383132F90983EAE86E89B868_donaldo3.jpg" alt = "Professor">
 			<ul class="nav_menu">
@@ -64,13 +63,11 @@
 		</aside>
 
 		<section class = "main">
-			<div>
+			<div class = "whatsNew_title">
+				<h2>What's New</h2>
+				<a href="#">More News</a>	
+			</div>
 				<article class = "whatsNew">
-					<div class = "whatsNew_title">
-						<h2>What's New</h2>
-						<a href="#">More News</a>	
-					</div>
-
 					<div class = "main_reports">
 						<img src="https://papermilkdesign.com/images/newspaper-clipart-black-and-white-7.jpg" alt = "whatsNew">
 						<div>
@@ -102,21 +99,6 @@
 					</div>
 				</article>
 
-				<article class = "carousel">
-					<div class="carousel">
-					    <div class="item slide-in" id="item1"></div>
-					    <div class="item slide-in" id="item2"></div>
-					    <div class="item slide-in" id="item3"></div>
-					    <div class="controls">
-					        <a href="#item1" class="btn">•</a>
-					        <a href="#item2" class="btn">•</a>
-					        <a href="#item3" class="btn">•</a>
-					    </div>
-					</div>
-				</article>
-			</div>
-
-			<div>
 				<article class = "newsticker">
 					<div>
 						<h2>Newsticker</h2><a href=""><span class="fas fa-bars"></span></a>
@@ -129,17 +111,8 @@
 						</div>
 						
 					</div>
-					
 				</article>
-				<article class = "spotlight">
-					<div>
-						<img src="https://media.istockphoto.com/photos/black-and-white-back-to-school-concept-accessories-college-equipment-picture-id965450580" alt = ".">
-						<h2>Title of this<br>small spotlight</h2>
-					</div>
-				</article>
-			</div>
 
-			<div>
 				<article class = "calendar">
 					<div class = "calendar_title">
 						<h2>Calendar</h2> 
@@ -167,17 +140,39 @@
 						</table>
 					</div>
 				</article>
-
-				<article class = "minor_spotlight">
-					<div>
-						<img src="https://st4.depositphotos.com/1718940/20539/i/1600/depositphotos_205390648-stock-photo-physics-college-campus-building-logo.jpg" alt = ".">
-						<h2>Second minor<br>spotlight title</h2>
-					</div>
-				</article>
-			</div>
 		</section>
-	</div>
 
+		<aside class="content_right">
+			<h2 class="content_right_title">Main Spotlight Title</h2>
+			<article class = "carousel">
+				<h2 class="content_right_title">The Main Spotlight shows multiple items in rotation</h2>
+				<div class="carousel">
+					<div class="item slide-in" id="item1"></div>
+					<div class="item slide-in" id="item2"></div>
+					<div class="item slide-in" id="item3"></div>
+					<div class="controls">
+						<a href="#item1" class="btn">•</a>
+					   	<a href="#item2" class="btn">•</a>
+					    <a href="#item3" class="btn">•</a>
+				    </div>
+				</div>
+			</article>
+
+			<article class = "spotlight">
+				<div>
+					<img src="https://media.istockphoto.com/photos/black-and-white-back-to-school-concept-accessories-college-equipment-picture-id965450580" alt = ".">
+					<h2>Title of this<br>small spotlight</h2>
+				</div>
+			</article>
+			<article class = "minor_spotlight">
+				<div>
+					<img src="https://st4.depositphotos.com/1718940/20539/i/1600/depositphotos_205390648-stock-photo-physics-college-campus-building-logo.jpg" alt = ".">
+					<h2>Second minor<br>spotlight title</h2>
+				</div>
+			</article>
+
+		</aside>
+	</div>
 	<hr>
 
 	<footer>

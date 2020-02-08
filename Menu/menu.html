@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+			text-decoration: none;
+			font-family: sans-serif;
+		}
+
+		.menu{
+			position: absolute;
+			left: 80px;	
+		}
+
+		.menu li{
+			display: inline-block;
+			background-color: #cdcdcd;
+			margin-left:-5px;
+			
+		}
+		.menu li a{
+			display: inline-block;
+			color: black;
+			padding:20px 50px;
+			font-size: 24pt;
+			transition: 1s;
+		}
+
+		.menu li a:hover{
+			 background-image: linear-gradient(#cdcdcd, white, #cdcdcd);
+		}
+
+		.menu_vertical{
+			top:100px;
+		}
+
+		.menu_vertical li{
+			display: block;
+			margin-bottom: 1px;
+		}
+	</style>
+</head>
+<body>
+	<ul class = "menu">
+		<li><a href="">Página inicial</a></li>
+		<li><a href="">Feed RS</a></li>		
+		<li><a href="">Fotos</a></li>
+		<li><a href="">Links</a></li>
+	</ul>
+
+	<ul class = "menu menu_vertical">
+		<li><a href="">Página inicial</a></li>
+		<li><a href="">Feed RS</a></li>		
+		<li><a href="">Fotos</a></li>
+		<li><a href="">Links</a></li>
+	</ul>
+</body>
+</html>

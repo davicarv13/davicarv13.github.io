@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form method = "get" action="https://www.google.com/search" target="_top" class="form-group">
+
+		<fieldset>
+			<legend>Pesquisa</legend>
+			<label for="search">Pesquisar:</label><input type="text" name="q" value="" placeholder="Digite aqui sua consulta" list = "lista" id="search">
+
+			<datalist id = "lista">
+				<option value = "Campos"></option>
+				<option value = "Quissamã"></option>
+				<option value = "Macaé"></option>
+			</datalist>
+		</fieldset>
+		
+		<br>
+
+		<fieldset>
+			<legend>Senha</legend>
+			<label for="senha">Senha:</label><input type="password" name="senha" placeholder="Digite sua senha" id="senha" required autofocus="true">
+		</fieldset>
+	
+		<fieldset>
+			<legend>Profissao</legend>
+			<p>Você deseja trabalhar com Webmaster?</p>
+			<input type="radio" name="webmaster" checked id="webmaster1"> <label for = "webmaster1">Sim</label>
+			<br>
+			<input type="radio" name="webmaster" id="webmaster2"> <label for = "webmaster2">Não</label>
+			<br>
+			<input type="radio" name="webmaster" id="webmaster3"> <label for = "webmaster3">Talvez</label>
+			<br>
+			<input type="radio" name="webmaster" id="webmaster4"> <label for = "webmaster4">Quem sabe</label>
+			<br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Linguagem</legend>
+			<p>O que você deseja aprender?</p>
+			<input type="checkbox" name="conteudo1" checked id="conteudo1"> <label for="conteudo1">HTML</label>
+			<br>
+			<input type="checkbox" name="conteudo2" checked id="conteudo2"> <label for="conteudo2">CSS</label>
+			<br>
+			<input type="checkbox" name="conteudo3" checked id="conteudo3"> <label for="conteudo3">Javascript</label>
+			<br>
+			<input type="checkbox" name="conteudo4" checked id="conteudo4"> <label for="conteudo4">PHP</label>
+			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Select</legend>
+			<select name = "nomeMenu" size="5" multiple="multiple">
+				<optgroup label = "Linguagem para Web">
+					<option value = "valor1">HTML (Linguagem de marcação)</option>
+					<option value = "valor2">CSS (Linguagem de estilo)</option>
+					<option value = "valor3">Javascript (Linguagem de programação)</option>
+					<option value = "valor4">PHP ((Linguagem de programação)</option>
+				</optgroup>
+				<optgroup label = "Linguagem para Desktop">
+					<option value = "valor1">C</option>
+					<option value = "valor2">C++</option>
+					<option value = "valor3">Java</option>
+				</optgroup>
+			</select>
+ 			<br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Textarea</legend>
+			<textarea rows="20" cols="50" maxlength="500" disabled=true readonly="true"> 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ex dolor, vestibulum ut lorem id, semper varius elit. Sed eu egestas odio. Aliquam eget risus in lectus efficitur dictum. Aenean auctor ornare sollicitudin. Sed placerat malesuada fringilla. Fusce elementum ac ipsum quis congue.
+		</textarea>
+
+		<br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Input File</legend>
+			<input type="file" name="arquivo">
+		</fieldset>
+
+		<input type="text" name="regular" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> Regex
+		<br>
+
+		<fieldset>
+			<legend>Novos inputs</legend>
+			<input type="search">Search box
+			<br>
+			<input type="number">Spin boxes
+			<br>
+			<input type="range">Sliders
+			<br>
+			<input type="color">Color pickers
+			<br>
+			<input type="tel">Telephone number
+			<br>
+			<input type="url">Web address
+			<br>
+			<input type="date">Data
+		</fieldset>
+		<input type="submit" name="search" value="Buscar">
+		<input type="reset" name="reset" value="Limpar">
+	</form>
+</body>
+</html>

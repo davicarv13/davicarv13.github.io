@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p{
+			display:inline;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id = "texto">
+	<p>Voce está digitando: </p><span id = "textoDigitado"></span>
+	<script type="text/javascript">
+		function preencheSpan(){
+			var input = document.getElementById("texto");
+			var conteudo = input.value;
+			var span = document.getElementById("textoDigitado");
+			span.innerHTML = conteudo;
+		}
+
+		var input = document.getElementById("texto");
+		input.addEventListener("keyup", preencheSpan, false);
+
+</script>
+</body>
+
+</html>

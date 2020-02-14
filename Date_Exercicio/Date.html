@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date</title>
+	<style type="text/css">
+		div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 30px;
+			background: grey;
+			width: 100%;
+			height: 300px;			
+		}
+		form{
+			color: white;
+			font-size: 18pt;
+			display: flex;
+			flex-direction: column;
+		}	
+
+		form input{
+			text-align: center;
+		}
+		label{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<form>
+			<label for="dataNascimento">Informe sua data de nascimento</label>
+			<input type="date" name="dataNascimento" value="" id="dataNascimento">
+			<button onclick = "calculaIdade()">Calcular Idade</button>
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function calculaIdade(){
+			var dataNascimento = new Date(document.getElementById("dataNascimento").value);
+			var mesNascimento = dataNascimento.getMonth();
+			var anoNascimento = dataNascimento.getFullYear();
+			var diaNascimento = dataNascimento.getDate() + 1;
+			
+
+			var d = new Date();
+			var anoAtual = d.getFullYear();
+			var mesAtual = d.getMonth();
+			var diaAtual = d.getDate();
+
+			
+
+			idade = anoAtual - anoNascimento;
+
+			if(mesAtual < mesNascimento){
+				idade--;
+			}
+			else if(mesAtual == mesNascimento && diaAtual > diaNascimento){
+				idade--;
+			}
+			/*
+			alert("Dia atual: "+diaAtual+
+			"Dia nascimento: "+diaNascimento+
+			"Mes atual: "+mesAtual+
+			"Mes nascimento: "+mesNascimento+
+			"Ano atual: "+anoAtual+
+			"Ano nascimento: "+anoNascimento);
+			*/
+			alert("Idade: " +idade+ " anos");
+		}
+	</script>
+</body>
+</html>

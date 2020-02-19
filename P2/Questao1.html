@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		form{
+			display: flex;
+			flex-direction: column;
+		}
+		form *{
+			margin: 5px;
+			width: 200px;
+		}
+	</style>
+	
+</head>
+<body>
+	<form>
+		<input type="text" name="nome" id="nome" placeholder="Nome">
+		<input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+		<label for="dataChegada">Data de Chegada</label>
+		<input type="date" name="dataChegada" id="dataChegada" placeholder="dataChegada">
+		<label for="dataChegada">Data de Saida</label>
+		<input type="date" name="dataSaida" id="dataSaida" placeholder="dataSaida">
+		<label for="tipoQuarto">Tipo de quarto</label>
+		<select id="tipoQuarto">
+			<option value="single">Single</option>
+			<option value="double">Double</option>
+			<option value="double">Triplo</option>
+		</select>
+
+		<label for="numeroCriancas:">Numero de crianças</label>
+		<input type="number" name="numeroCriancas" id="numeroCriancas" value='1' min="0" max="3">
+
+		<input type="submit" name="enviar" id="btnEnviar" id="btnEnviar" value="Enviar">
+	</form>
+
+	<script type="text/javascript" src="Questao1.js"></script>
+</body>
+</html>
